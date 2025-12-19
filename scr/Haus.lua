@@ -3,27 +3,36 @@ Haus = {}
 
 function Haus.load()
 
-    HausX = 850
-   HausY = 400
+    hausX = 0
+    hausY = 100
+
+
 
 end
 
 function Haus.draw()
-    if zustand == 2 then
-        zeichneHaus(HausX, HausY)
-    end
 
-end
-
-function Haus.update(dt)
 
     if zustand == 1 then
-       HausX = HausX -300*dt
+        zeichneHaus(hausX, hausY)
     end
+
+    if zustand == 1 then
+    zeichneFenster ( fensterX, fensterY )
+end
 
 end
 
-function zeichneHaus(x,y)
-    love.graphics.rectangle("fill",x,y,25)
-    love.graphics.setColor(252, 151, 43)
+
+function zeichneHaus(xPos,yPos)
+    love.graphics.setColor(0, 0, 0)
+    love.graphics.rectangle("fill",xPos,yPos,180,400)
+
+end
+
+
+function zeichneFenster(x,y)
+    love.graphics.setColor(247/255, 205/255, 37/255)
+    love.graphics.rectangle("fill",x,y,50,50)
+
 end
