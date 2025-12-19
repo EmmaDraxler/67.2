@@ -6,7 +6,8 @@ function Haus.load()
     hausX = 0
     hausY = 100
 
-
+    fenster = 50
+    fenster = 120
 
 end
 
@@ -18,15 +19,15 @@ function Haus.draw()
     end
 
     if zustand == 1 then
-    zeichneFenster ( fensterX, fensterY )
+        zeichneFenster (fensterX,fensterY)
 end
 
 end
 
 
-function zeichneHaus(xPos,yPos)
+function zeichneHaus(x,y)
     love.graphics.setColor(0, 0, 0)
-    love.graphics.rectangle("fill",xPos,yPos,180,400)
+    love.graphics.rectangle("fill",x,y,180,400)
 
 end
 
