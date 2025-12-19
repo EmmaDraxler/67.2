@@ -1,6 +1,6 @@
 Buss = {}
 
-function Kreis2.load()
+function Buss.load()
 
     BussX = 850
     BussY = 400

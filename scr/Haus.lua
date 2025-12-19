@@ -25,5 +25,5 @@ end
 
 function zeichneHaus(x,y)
     love.graphics.rectangle("fill",x,y,25)
-    love.graphics.setColor(252, 151, 43)
+    love.graphics.setColor(1, 1, 1)
 end
