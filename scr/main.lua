@@ -1,6 +1,5 @@
 require "intro"
-require "Buss"
-require "Haus"
+require "Infrastruktur"
 require "outro"
 
 function love.load()
@@ -13,13 +12,14 @@ end
 
 
 function love.draw()
-    love.graphics.setColor(1,1,1)
+    love.graphics.setBackgroundColor(25/255, 30/255, 46/255)
     love.graphics.print("Zeit: " .. math.floor(zeit*100)/100, 375, 0)  --print sorgt dafür das variable angezeigt wird
     if zustand == 1 then
         intro.draw()
     end
-    --Buss.draw()
-    --House.draw()
+    if zustand == 2 then
+        Infrastruktur.draw()
+    end
 end
 
 
@@ -31,12 +31,7 @@ function love.update(dt)
     if zeit > 3 and zustand == 1 then
         zustand = 2
     end
-    --[[if zeit < 3 then
-        Buss.update(dt)
-    end
 
-    if zeit > 3 and zustand == 1
-        then House.update(dt)
-    end]]--
+
 end
 
