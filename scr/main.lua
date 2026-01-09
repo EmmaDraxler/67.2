@@ -13,7 +13,7 @@ function love.draw()
     love.graphics.print("Zeit: " .. math.floor(zeit*100)/100, 375, 0)  --print sorgt dafür das variable angezeigt wird
 
     if zustand == 1 then
-        Haus.draw()
+        Infrasturktur.draw()
     end
 
 end

@@ -2,6 +2,28 @@ Infrasturktur = {}
 
 
 function Infrasturktur.draw()
+    zeichneHaus1 ()
+    zeichneHaus2 ()
+    zeichneStrasse()
+end
+
+
+function zeichneStrasse()
+    love.graphics.setColor(117/255, 117/255, 116/255)
+    love.graphics.rectangle("fill",0,500,800,200)
+end
+
+function zeichneHaus(x,y)
+    love.graphics.setColor(0, 0, 0)
+    love.graphics.rectangle("fill",x,y,180,400)
+end
+
+function zeichneFenster(x,y)
+    love.graphics.setColor(235/255, 229/255, 52/255)
+    love.graphics.rectangle("fill",x,y,40,40)
+end
+
+function zeichneHaus1 ()
     zeichneHaus(0,150)
     zeichneFenster(10,180)
     zeichneFenster(65,180)
@@ -21,6 +43,9 @@ function Infrasturktur.draw()
     zeichneFenster(10,480)
     zeichneFenster(65,480)
     zeichneFenster(120,480)
+end
+
+function zeichneHaus2 ()
     zeichneHaus(180,150)
     zeichneFenster(190,180)
     zeichneFenster(255,180)
@@ -40,22 +65,4 @@ function Infrasturktur.draw()
     zeichneFenster(290,480)
     zeichneFenster(255,480)
     zeichneFenster(300,480)
-
-    zeichneStrasse()
-end
-
-
-function zeichneStrasse()
-    love.graphics.setColor(117/255, 117/255, 116/255)
-    love.graphics.rectangle(mode"fill",0,500,800,200)
-end
-
-function zeichneHaus(x,y)
-    love.graphics.setColor(0, 0, 0)
-    love.graphics.rectangle("fill",x,y,180,400)
-end
-
-function zeichneFenster(x,y)
-    love.graphics.setColor(235/255, 229/255, 52/255)
-    love.graphics.rectangle("fill",x,y,40,40)
 end

@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Main.lua" type="lua.app" factoryName="Lua Application">
-    <option name="program" value="C:\Users\peleraqu\IdeaProjects\67.2\love-sdk\love.exe" />
+    <option name="program" value="C:\Users\draxemma\IdeaProjects\67.2\love-sdk\love.exe" />
     <option name="file" value="$PROJECT_DIR$/scr/" />
     <option name="workingDir" value="$PROJECT_DIR$/scr/" />
     <option name="debuggerType" value="2" />
