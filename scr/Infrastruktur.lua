@@ -13,9 +13,9 @@ function zeichneStrasse()
     love.graphics.rectangle("fill",0,500,800,200)
 end
 
-function zeichneHaus(x,y)
+function zeichneHaus(x,y,w,h)
     love.graphics.setColor(0, 0, 0)
-    love.graphics.rectangle("fill",x,y,180,400)
+    love.graphics.rectangle("fill",x,y,w,h)
 end
 
 function zeichneFenster(x,y)
@@ -24,7 +24,7 @@ function zeichneFenster(x,y)
 end
 
 function zeichneHaus1 ()
-    zeichneHaus(0,150)
+    zeichneHaus(0,150, 180,400)
     zeichneFenster(10,180)
     zeichneFenster(65,180)
     zeichneFenster(120,180)
@@ -46,10 +46,7 @@ function zeichneHaus1 ()
 end
 
 function zeichneHaus2 ()
-    zeichneHaus(180,150)
-    zeichneFenster(190,180)
-    zeichneFenster(255,180)
-    zeichneFenster(300,180)
+    zeichneHaus(180,200, 120,  350)
     zeichneFenster(290,240)
     zeichneFenster(255,240)
     zeichneFenster(300,240)
