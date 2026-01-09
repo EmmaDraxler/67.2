@@ -1,4 +1,4 @@
-require "Haus"
+require "Infrastruktur"
 
 
 function love.load()
@@ -15,6 +15,7 @@ function love.draw()
     if zustand == 1 then
         Haus.draw()
     end
+
 end
 
 

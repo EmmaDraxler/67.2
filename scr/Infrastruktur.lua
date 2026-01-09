@@ -1,7 +1,7 @@
-Haus = {}
+Infrasturktur = {}
 
 
-function Haus.draw()
+function Infrasturktur.draw()
     zeichneHaus(0,150)
     zeichneFenster(10,180)
     zeichneFenster(65,180)
@@ -41,6 +41,13 @@ function Haus.draw()
     zeichneFenster(255,480)
     zeichneFenster(300,480)
 
+    zeichneStrasse()
+end
+
+
+function zeichneStrasse()
+    love.graphics.setColor(117/255, 117/255, 116/255)
+    love.graphics.rectangle(mode"fill",0,500,800,200)
 end
 
 function zeichneHaus(x,y)
