@@ -12,8 +12,8 @@ end
 
 
 function love.draw()
-    love.graphics.setBackgroundColor(25/255, 30/255, 46/255)
-    love.graphics.print("Zeit: " .. math.floor(zeit*100)/100, 375, 0)  --print sorgt dafür das variable angezeigt wird
+    love.graphics.setBackgroundColor(0, 0, 0.5)
+    love.graphics.print(math.floor(zeit*100)/100, 375, 0)  --print sorgt dafür das variable angezeigt wird
     if zustand == 1 then
         intro.draw()
     end
@@ -32,6 +32,4 @@ function love.update(dt)
         zustand = 2
     end
 
-
 end
-

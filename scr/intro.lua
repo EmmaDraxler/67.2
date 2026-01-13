@@ -5,7 +5,8 @@ function intro.load()
 end
 
 function intro.draw()
-    love.graphics.print(math.floor(countdownTimer), 400, 400)
+    love.graphics.print(math.floor(countdownTimer), 400, 300)
+
 end
 
 function intro.update(dt)
