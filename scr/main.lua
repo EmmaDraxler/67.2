@@ -1,7 +1,7 @@
 require "intro"
 require "Infrastruktur"
 require "outro"
-
+require "Buss"
 function love.load()
     zustand = 1 --steht für Intro
     zeit = 0
@@ -19,6 +19,7 @@ function love.draw()
     end
     if zustand == 2 then
         Infrastruktur.draw()
+        Buss.draw ()
     end
 end
 
