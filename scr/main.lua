@@ -6,7 +6,7 @@ function love.load()
     zustand = 1 --steht für Intro
     zeit = 0
     intro.load()
-    --Buss.load()
+    Buss.load()
     --House.load()
 end
 
@@ -29,8 +29,12 @@ function love.update(dt)
     if zustand == 1 then
         intro.update(dt)
     end
+
     if zeit > 3 and zustand == 1 then
         zustand = 2
     end
 
+    if zustand == 2 then
+        Buss.update(dt)
+    end
 end
