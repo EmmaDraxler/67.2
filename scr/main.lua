@@ -3,6 +3,7 @@ require "Infrastruktur"
 require "outro"
 require "Buss"
 require "szene2"
+require "szene4"
 
 function love.load()
     zustand = 1 --steht für Intro
@@ -31,7 +32,12 @@ function love.draw()
     end
 
     if zustand == 4 then
+        szene4.draw()
         Buss.draw ()
+    end
+
+    if zustand == 5 then
+        outro.draw ()
     end
 end
 
@@ -77,4 +83,9 @@ function love.update(dt)
     if zustand == 4 then
         Buss.update (dt)
     end
+
+    if zustand == 4 and zeit > 25 then
+        zustand = 5
+    end
+
 end
