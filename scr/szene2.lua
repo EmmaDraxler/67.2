@@ -1,0 +1,43 @@
+szene2 = {}
+
+function szene2.draw ()
+    zeichneWiese ()
+    zeichneBaum (200)
+    zeichneBaum (766)
+    zeichneBaum (260)
+    zeichneBaum (110)
+    zeichneBaum (400)
+    zeichneBaum (380)
+    zeichneBaum (333)
+    zeichneBaum (600)
+    zeichneBaum (444)
+    zeichneBaum (49)
+    zeichneBaum (705)
+    zeichneBaum (529)
+    zeichneBaum (558)
+    zeichneWolke ()
+    love.graphics.setColor(239/255,201/255,0)
+    love.graphics.circle("fill",100,70,50)
+end
+
+function zeichneWiese ()
+    love.graphics.setBackgroundColor (41/255, 97/255, 169/255)
+    love.graphics.setColor(107/255,142/255,35/255)
+    love.graphics.rectangle("fill",0,500,800,200)
+end
+
+function zeichneBaum (xpos)
+    love.graphics.setColor(139/255,69/255,19/255)
+    love.graphics.rectangle("fill",xpos,400,50,105)
+    love.graphics.setColor(107/255,142/255,35/255)
+    love.graphics.circle("fill",xpos+25,370,60)
+end
+
+function zeichneWolke ()
+    love.graphics.setColor(1,1,1)
+    love.graphics.circle("fill",675,150,40)
+    love.graphics.circle("fill",630,150,40)
+    love.graphics.circle("fill",580,150,40)
+    love.graphics.circle("fill",655,110,40)
+    love.graphics.circle("fill",610,110,40)
+end
