@@ -24,10 +24,10 @@ function Buss.load ()
 end
 
 function Buss.update(dt)
-    bus = bus + dt*50
-    rad1 = rad1 + dt*50
-    rad2 = rad2 + dt*50
-    f1 = f1 + dt*50
-    f2 = f2 + dt*50
-    f3 = f3 + dt*50
+    bus = bus + dt*80
+    rad1 = rad1 + dt*80
+    rad2 = rad2 + dt*80
+    f1 = f1 + dt*80
+    f2 = f2 + dt*80
+    f3 = f3 + dt*80
 end

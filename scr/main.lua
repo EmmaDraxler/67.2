@@ -37,4 +37,8 @@ function love.update(dt)
     if zustand == 2 then
         Buss.update(dt)
     end
+
+    if zustand == 2 and zeit > 11 then
+        zustand = 3
+    end
 end
