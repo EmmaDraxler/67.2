@@ -1,6 +1,7 @@
 require "intro"
 require "Infrastruktur"
 require "outro"
+
 function love.load()
     zustand = 1 --steht für Intro
     zeit = 0
