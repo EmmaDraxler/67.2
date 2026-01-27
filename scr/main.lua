@@ -15,7 +15,7 @@ end
 
 
 function love.draw()
-    love.graphics.setBackgroundColor(0, 0, 0.5)
+    love.graphics.setBackgroundColor(0, 0, 1)
     love.graphics.print(math.floor(zeit*100)/100, 375, 0)  --print sorgt dafür das variable angezeigt wird
     if zustand == 1 then
         intro.draw()
