@@ -84,6 +84,9 @@ function love.update(dt)
         Buss.update (dt)
     end
 
+    if zustand == 4 and zeit < 22 then
+
+    end
     if zustand == 4 and zeit > 25 then
         zustand = 5
     end

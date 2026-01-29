@@ -1,6 +1,7 @@
 szene2 = {}
 
 function szene2.draw ()
+    --zeichneVogel ()
     zeichneWiese ()
     zeichneBaum (200)
     zeichneBaum (766)
@@ -18,7 +19,6 @@ function szene2.draw ()
     zeichneWolke ()
     love.graphics.setColor(239/255,201/255,0)
     love.graphics.circle("fill",100,70,50)
-    zeichneVogel ()
 end
 
 function zeichneWiese ()
@@ -42,15 +42,21 @@ function zeichneWolke ()
     love.graphics.circle("fill",655,110,40)
     love.graphics.circle("fill",610,110,40)
 end
+
+function szene2.load ()
+    vx = 410
+end
+
 function zeichneVogel ()
     love.graphics.setColor(0,0,0)
-    love.graphics.circle("fill",410,310,37)
+    love.graphics.circle("fill", vx*1,310,37)
     love.graphics.setColor(0,0,0)
-    love.graphics.circle("fill",470,310,37)
-    love.graphics.setColor(82/255,120/255,1)
-    love.graphics.rectangle("fill",370,320,150,50)
-    love.graphics.setColor(82/255,120/255,1)
-    love.graphics.circle("fill",470,320,25)
-    love.graphics.setColor(82/255,120/255,1)
-    love.graphics.circle("fill",405,320,25)
+    love.graphics.circle("fill",vx+60,310,37)
+    love.graphics.setColor(41/255, 97/255, 169/255)
+    love.graphics.rectangle("fill",vx-40,320,150,50)
+    love.graphics.setColor(41/255, 97/255, 169/255)
+    love.graphics.circle("fill",vx+60,320,25)
+    love.graphics.setColor(41/255, 97/255, 169/255)
+    love.graphics.circle("fill",vx-5,320,25)
 end
+

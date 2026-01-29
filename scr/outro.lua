@@ -6,6 +6,6 @@ end
 
 function outro.draw()
 love.graphics.setFont(myFont)
-love.graphics.print("Thank you for watching!", 400, 300)
+love.graphics.print("Thank you for watching!", 100, 300)
 
 end
