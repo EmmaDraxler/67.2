@@ -39,12 +39,12 @@ function Buss.update(dt)
     f3 = f3 + dt*80
 
     if zustand == 4 then
-        s = s - 0.1*dt
-        busy = busy - dt*40
-        rad1y = rad1y - dt*40
-        rad2y = rad2y - dt*40
-        f1y = f1y - dt*40
-        f2y = f2y - dt*40
-        f3y = f3y - dt*40
+        --s = s - 0.1*dt
+        busy = busy - dt*80
+        rad1y = rad1y - dt*80
+        rad2y = rad2y - dt*80
+        f1y = f1y - dt*80
+        f2y = f2y - dt*80
+        f3y = f3y - dt*80
     end
 end
