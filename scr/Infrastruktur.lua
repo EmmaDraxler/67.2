@@ -10,7 +10,7 @@ function Infrastruktur.update(dt)
 
     moonX = moonX + dt * 30  --Parabel
     moonY = moonY + moonGy * dt
-    moonGy = moonGy + dt * 7
+    moonGy = moonGy + dt * 7 --Geschwindigkeit und Beschleunigung (desto größer desto schneller)
 end
 
 function Infrastruktur.draw()
