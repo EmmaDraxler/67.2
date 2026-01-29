@@ -1,6 +1,7 @@
 szene2 = {}
 
 function szene2.draw ()
+    --zeichneVogel ()
     zeichneWiese ()
     zeichneBaum (200)
     zeichneBaum (766)
@@ -33,6 +34,8 @@ function zeichneBaum (xpos)
     love.graphics.circle("fill",xpos+25,370,60)
 end
 
+
+
 function zeichneWolke ()
     love.graphics.setColor(1,1,1)
     love.graphics.circle("fill",675,150,40)
@@ -41,3 +44,6 @@ function zeichneWolke ()
     love.graphics.circle("fill",655,110,40)
     love.graphics.circle("fill",610,110,40)
 end
+
+
+

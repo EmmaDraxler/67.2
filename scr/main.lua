@@ -10,12 +10,13 @@ function love.load()
     zeit = 0
     intro.load()
     Buss.load()
+    Infrastruktur.load()
     --House.load()
 end
 
 
 function love.draw()
-    love.graphics.setBackgroundColor(0, 0, 1)
+    love.graphics.setBackgroundColor(0, 0, 0)
     love.graphics.print(math.floor(zeit*100)/100, 375, 0)  --print sorgt dafür das variable angezeigt wird
     if zustand == 1 then
         intro.draw()
@@ -54,6 +55,7 @@ function love.update(dt)
 
     if zustand == 2 then
         Buss.update(dt)
+        Infrastruktur.update(dt)
     end
 
     if zustand == 2 and zeit > 11 then
@@ -84,6 +86,9 @@ function love.update(dt)
         Buss.update (dt)
     end
 
+    if zustand == 4 and zeit < 22 then
+
+    end
     if zustand == 4 and zeit > 25 then
         zustand = 5
     end
