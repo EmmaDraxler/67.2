@@ -8,7 +8,6 @@ end
 function intro.draw()
     love.graphics.setFont(myFont)
     love.graphics.print(math.floor(countdownTimer), 400, 300)
-
 end
 
 function intro.update(dt)
